@@ -1,17 +1,35 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <app-menu tittle = "Megadron"></app-menu>
+    <router-view />
+    <appFooter />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  import AppMenu from "@/components/AppMenu.vue";
+  import AppFooter from "@/components/AppFooter.vue";
+  export default {
+    name: 'App',
+    data(){
+      return {
+        
+      }
+    },
+    methods: {
+      
+    },
+    computed: {
+      
+    },
+    mounted() {
+      
+    },
+    components: {
+      AppMenu,
+      AppFooter
+    }
   }
-}
 </script>
 
 <style>
