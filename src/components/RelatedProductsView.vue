@@ -43,13 +43,13 @@
 <script>
     import axios from "axios";
     export default {
-        name: 'RelatedProductsView',
+        name: "RelatedProductsView",
         data(){
             return {
                 
             };
         },
-        props: ['prod'],
+        props: ["prod"],
         methods: {
             redirect(id) {
                 window.location.href = `http://localhost:8080/products/${id}`;
